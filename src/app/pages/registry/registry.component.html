@@ -1,0 +1,25 @@
+<div class="container" style="height: 90vh;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);">
+            <div class="m-4">
+                <form [formGroup]="formGroupSignIn">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" formControlName="email">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" formControlName="password">
+                    </div>
+                    <!-- los campos que agregues les asignas su formcontrol name en el <input> -->
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" (click)="signIn()">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
